@@ -110,6 +110,17 @@ function Topbar() {
                     <h1 className="text-3xl mt-2 font-bold">Office</h1>
                   </span>
                 </Link>
+                <Link href="/other">
+                  <span className="flex gap-8 bg-[#2e2e2e5b] rounded-lg p-6 hover:shadow-md hover:shadow-black">
+                    <Image
+                      src="/hammer.svg"
+                      alt="other"
+                      height={50}
+                      width={50}
+                    />
+                    <h1 className="text-3xl mt-2 font-bold">Other</h1>
+                  </span>
+                </Link>
                 <Link href="/contact">
                   <span className="flex gap-8 bg-[#2e2e2e5b] rounded-lg p-6 hover:shadow-md hover:shadow-black">
                     <Image
@@ -121,7 +132,6 @@ function Topbar() {
                     <h1 className="text-3xl mt-2 font-bold">contact</h1>
                   </span>
                 </Link>
-                
               </div>
             </SheetContent>
           </Sheet>

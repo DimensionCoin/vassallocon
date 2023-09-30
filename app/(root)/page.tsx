@@ -7,17 +7,25 @@ import TypeWriter from "@/components/cards/TypeWriter";
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-white">
-      <MainPic />
-      <TypeWriter/>
-      <div className="flex flex-row justify-center  mb-24">
+      <header>
+        <h1 className="sr-only">Vassallo Construction</h1>
+        <MainPic />
+      </header>
+      <section aria-label="Introduction">
+        <TypeWriter />
+      </section>
+      <section
+        aria-label="Services"
+        className="flex flex-row justify-center mb-24"
+      >
         <ServiceCard />
-      </div>
-      <div>
+      </section>
+      <section aria-label="Instagram Feed">
         <Insta />
-      </div>
-      <div>
+      </section>
+      <section aria-label="Testimonials">
         <Testimonials />
-      </div>
+      </section>
     </main>
   );
 }

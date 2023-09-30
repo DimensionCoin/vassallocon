@@ -7,7 +7,7 @@ function Bottombar() {
           <a href="tel:4167023183" title="Call us at 4167023183">
             <Image src="/phone.svg" alt="phone" height={30} width={30} />
           </a>
-          <a href="mailto:vnick8@hotmail.com?subject=VasslloConstruction%20Quote">
+          <a href="mailto:vnick8@hotmail.com?subject=Contact Vassallo Construction">
             <Image src="/email.svg" alt="call" height={30} width={30} />
           </a>
           <a
@@ -18,7 +18,9 @@ function Bottombar() {
           >
             <Image src="/insta.svg" alt="Instagram" height={30} width={30} />
           </a>
-          <Image src="/chat.svg" alt="call" height={30} width={30} />
+          <a href="/contact">
+            <Image src="/chat.svg" alt="call" height={30} width={30} />
+          </a>
         </div>
       </section>
     );

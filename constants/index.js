@@ -1,21 +1,27 @@
 export const servicebarLinks = [
   {
-    imgURL:["/fences.png","deck.png", "/woodframe.png"],
+    imgURL: ["/fences.png", "deck.png", "/woodframe.png"],
     name: "Outdoor",
     route: "/outdoor",
     description: "Build all types of fences to suit your backyard",
   },
   {
-    imgURL: ["/office.png",],
+    imgURL: ["/office.png", "/ofiice2.png"],
     name: "Office",
     route: "/office",
     description: "office space is nessisary, get the most out of your office",
   },
   {
     imgURL: ["/main.png", "/trim.png"],
-    name:"Indoor",
+    name: "Indoor",
     route: "/indoor",
     description: "Need New Trim or wall decor",
+  },
+  {
+    imgURL: ["/trim.png", "/main.png"],
+    name: "Other",
+    route: "/other",
+    description: "cant find what you're looking for, reach out and we'll see if we can help",
   },
 ];
 

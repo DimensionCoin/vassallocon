@@ -1,31 +1,9 @@
-"use client"
-
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { servicebarLinks } from "@/constants"; // Adjust the path if needed
 
 function ServiceCard() {
-  // State to keep track of the current image index for each service link
-  const [currentImageIndices, setCurrentImageIndices] = useState(
-    servicebarLinks.map(() => 0)
-  );
-
-  useEffect(() => {
-    // Set an interval to change the image every 5 seconds (or any other desired interval)
-    const interval = setInterval(() => {
-      setCurrentImageIndices((prevIndices) =>
-        prevIndices.map(
-          (currentIndex, idx) =>
-            (currentIndex + 1) % servicebarLinks[idx].imgURL.length
-        )
-      );
-    }, 5000);
-
-    // Clear the interval when the component unmounts
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mx-auto max-w-screen-xl p-2 px-4">
+    <div className="grid grid-cols-2 md:grid-cols-2 gap-2 mx-auto max-w-screen-xl p-1 px-2">
       {servicebarLinks.map((link, index) => (
         <a
           key={index}
@@ -34,12 +12,12 @@ function ServiceCard() {
         >
           <div className="w-full h-72 overflow-hidden rounded-lg">
             <img
-              src={link.imgURL[currentImageIndices[index]]}
+              src={link.imgURL[0]} // Always use the first image
               alt="Service Image"
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="mt-4 mb-8 font-bold">{link.name}</p> 
+          <p className="mt-4 mb-8 font-bold">{link.name}</p>
           <p className="mt-4 p-3">{link.description}</p>
         </a>
       ))}
