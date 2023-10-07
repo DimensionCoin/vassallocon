@@ -25,6 +25,8 @@ export default function Home() {
       </section>
       <section aria-label="Testimonials">
         <Testimonials />
+
+        <h1>im Gay</h1>
       </section>
     </main>
   );

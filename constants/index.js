@@ -1,6 +1,6 @@
 export const servicebarLinks = [
   {
-    imgURL: ["/fences.png", "deck.png", "/woodframe.png"],
+    imgURL: ["/fences.png", "/deck.png", "/woodframe.png"],
     name: "Outdoor",
     route: "/outdoor",
     description: "Build all types of fences to suit your backyard",
